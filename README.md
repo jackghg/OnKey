@@ -9,6 +9,12 @@ Lightweight on-screen keyboard in c and gtk2, optimized for portable devices.
 - for Xorg
 ## Limitations
 - doesn't support auto show / hide
+- you can't change the buttons size atm
+## Install
+To build and install use:  
+`sudo make build clean install`  
+You can `sudo make uninstall`  
+To open and close the app you could use a small script like 'tkey', see the file.
 ## Options
 -e   Expand the window width to match the screen width  
 -k   Temporary set the system keyboard layout to 'us' while the app is open  

@@ -12,9 +12,14 @@ WARNING: This app will remap the keycode 249 to emulate unicode characters key. 
 - doesn't support auto show / hide
 - no spell check or word completition
 ## Install
+REQUIRES gtk2 dev and xlib.  
+On Arch:
+`sudo pacman -S base-devel gtk2 xlib11`
+On Debian, Ubuntu:
+`sudo apt install build-essential libgtk2.0-dev libxtst-dev`
 To build and install use:  
 `sudo make build clean install`  
-You can  
+To uninstall:  
 `sudo make uninstall`  
 To open and close the app you could use a small script like 'tkey', see the file.
 ## Options

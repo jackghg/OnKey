@@ -39,6 +39,7 @@ To have the application works correctly you can:
 \- use unicode codes for all or part of the keys
 ## Style
 You can customize colors and font using a gtk 2 style file in your home folder, see the -t option. Or use system theme.
-
+## Known bugs
+\- The shift color and custom style doesn't work when using system theme
 ## Make your keys table
 ...

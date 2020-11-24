@@ -44,7 +44,31 @@ To have the application works correctly you can:
 \- use unicode codes for all or part of the keys
 ## Style
 You can customize colors and font using a gtk 2 style file in your home folder, see the -t option. Or use system theme.
-## Known bugs
-\- The shift color and custom style doesn't work when using system theme
+## Known issues
+\- The shift color and custom style doesn't work when using system theme.  
+\- If you can't see unicode chars make sure you have a complete font, and the system locale set to utf8.  
 ## Make your keys table
-...
+To make your keys table, modify the variables in the "Variables to customize" section on top of the code. The keyboard UI is a grid so set the  number of columns, number of rows(per page) and number of pages setting **cn**, **nr** and **tp**.  
+Then write the 2d array for all the "pages", called **keya**, and the array for the upper case letters (1 page) called **ukey**.  
+Other variables you may want to change are the default vertical offset, **ofs**  (the height of the title bar to have the window on the bottom), and the height / width buttons ratio, **ra**.
+KEYS SYNTAX:  
+\- letter only: A letter, should be in your current system keyboard layout.  
+codes:  
+\- ^^^s space  
+\- ^^^x backspace  
+\- ^^^e enter  
+\- ^^^p next page  
+\- ^^^P prev page  
+\- ^^^S shift / upcase  
+\- ^^^u up  
+\- ^^^d down  
+\- ^^^l left  
+\- ^^^r right  
+\- ^^^t tab  
+prefixes:  
+- ^^S shift+letter, to print up case letters.  
+- ^^s shift + symbols where the string match keysim  
+- ^^n symbols where the string match keysim  
+- U U + 4 digit hexadecimal unicode code
+
+More about xlib conversion: https://cgit.freedesktop.org/xorg/proto/x11proto/tree/keysymdef.h

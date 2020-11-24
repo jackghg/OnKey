@@ -66,9 +66,9 @@ codes:
 \- ^^^r right  
 \- ^^^t tab  
 prefixes:  
-- ^^S shift+letter, to print up case letters.  
-- ^^s shift + symbols where the string match keysim  
-- ^^n symbols where the string match keysim  
-- U U + 4 digit hexadecimal unicode code
+\- ^^S shift+letter, to print up case letters.  
+\- ^^s shift + symbols where the string match keysim  
+\- ^^n symbols where the string match keysim  
+\- U U + 4 digit hexadecimal unicode code
 
 More about xlib conversion: https://cgit.freedesktop.org/xorg/proto/x11proto/tree/keysymdef.h

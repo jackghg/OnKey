@@ -1,5 +1,5 @@
 # OnKey
-![OnKey](ok.png)
+![OnKey](ok.png)  
 Lightweight on-screen keyboard in c and gtk2, optimized for portable devices.  
 WARNING: This app will remap the keycode 249 to emulate unicode characters key. Use `xmodmap -pke` to make sure it's unused.
 ## Features

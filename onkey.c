@@ -1,3 +1,5 @@
+// OnKey 0.5
+// gcc onkey.c -o onkey -lX11 -lXtst `pkg-config --cflags gtk+-2.0 pkg-config --libs gtk+-2.0`
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -299,7 +301,6 @@ gtk_window_set_position(GTK_WINDOW(win), GTK_WIN_POS_CENTER);
 gtk_widget_set_size_request(win, ww, wh);
 gtk_window_stick(GTK_WINDOW(win));
 gtk_window_set_keep_above(GTK_WINDOW(win), TRUE);
-gtk_window_set_type_hint((GtkWindow*)win, (GdkWindowTypeHint)GDK_WINDOW_TYPE_HINT_COMBO);
 g_signal_connect(win, "delete-event", G_CALLBACK(delete_event), NULL);
 table = gtk_table_new(nr, nc, TRUE);
 gtk_container_add(GTK_CONTAINER(win), table);

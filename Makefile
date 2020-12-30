@@ -4,7 +4,7 @@ LFLAGS   = `pkg-config --libs gtk+-2.0`
 default: build
 
 build: onkey.o
-	gcc onkey.o -g -lX11 -lXtst -o onkey ${LFLAGS}
+	gcc onkey.o -lX11 -lXtst -o onkey ${LFLAGS}
 
 onkey.o:
 	gcc ${CFLAGS} -c onkey.c

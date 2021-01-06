@@ -2,7 +2,7 @@
 Lightweight on-screen keyboard in c and gtk2, optimized for portable devices.  
 WARNING: This app will remap the keycode 249 to emulate unicode characters. Use `xmodmap -pke` to make sure it's unused.  
 ![OnKey](ok.png)  
-*OnKey - Look from system theme*
+ *OnKey - Look from system theme*
 ## Features
 - lightweight
 - usable on small screens
@@ -14,7 +14,7 @@ WARNING: This app will remap the keycode 249 to emulate unicode characters. Use 
 - doesn't support auto show / hide
 - no spell check or word completition
 ## Install
-REQUIRES gtk2 dev and xlib.  
+Requires gtk2 dev and xlib.  
 On Arch:  
 `sudo pacman -S base-devel gtk2 xlib11`  
 On Debian, Ubuntu:  

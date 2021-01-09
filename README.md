@@ -8,7 +8,7 @@ WARNING: This app will remap the keycode 249 to emulate unicode characters. Use 
 - usable on small screens
 - unicode
 - relatively highly customizable
-- small source code
+- readable source code
 ## Limitations
 - doesn't support auto show / hide
 - no spell check or word completition

@@ -15,9 +15,9 @@ WARNING: This app will remap the keycode 249 to emulate unicode characters. Use 
 ## Install
 Requires gtk2 dev and xlib.  
 On Arch:  
-`sudo pacman -S base-devel gtk2 xlib11`  
+`sudo pacman -S gtk2 xlib11`  
 On Debian, Ubuntu:  
-`sudo apt install build-essential libgtk2.0-dev libxtst-dev`  
+`sudo apt install libgtk2.0-dev libxtst-dev`  
 To build and install use:  
 `sudo make build clean install`  
 To uninstall:  

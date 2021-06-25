@@ -1,0 +1,15 @@
+style "win" {
+font_name = "sans bold 19"
+bg[NORMAL] = { 0.0, 0.0, 0.0 }
+}
+style "but" {
+engine "" {}
+bg[NORMAL] = { 1.0, 1.0, 0 }
+fg[NORMAL] = { 1.0, 0, 1.0 }
+bg[PRELIGHT] = { 0, 0, 1.0 }
+fg[PRELIGHT] = { 0, 1.0, 1.0 }
+bg[ACTIVE] = { 1.0, 0, 0 }
+fg[ACTIVE] = { 0, 1.0, 0 }
+}
+widget_class "GtkWindow*" style:highest "win"
+widget "*GtkButton*" style:highest "but"

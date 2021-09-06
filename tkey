@@ -1,6 +1,0 @@
-#!/bin/bash
-if [ $(pgrep -x "onkey") ]; then
-pkill onkey
-else
-(setsid onkey -e &)
-fi
